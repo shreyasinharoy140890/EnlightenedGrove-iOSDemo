@@ -1,0 +1,6 @@
+framework module Pods_EnlightenedGrove_EnlightenedGroveUITests {
+  umbrella header "Pods-EnlightenedGrove-EnlightenedGroveUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

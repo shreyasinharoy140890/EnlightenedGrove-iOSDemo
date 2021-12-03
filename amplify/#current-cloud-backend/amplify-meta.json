@@ -1,0 +1,107 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-neidersadmin-develop-132208-authRole",
+      "UnauthRoleArn": "arn:aws:iam::944458252180:role/amplify-neidersadmin-develop-132208-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::944458252180:role/amplify-neidersadmin-develop-132208-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-neidersadmin-develop-132208-deployment",
+      "UnauthRoleName": "amplify-neidersadmin-develop-132208-unauthRole",
+      "StackName": "amplify-neidersadmin-develop-132208",
+      "StackId": "arn:aws:cloudformation:us-east-1:944458252180:stack/amplify-neidersadmin-develop-132208/f52e6710-b2f6-11eb-b857-0e0c962da451",
+      "AmplifyAppId": "dk70it2gqa9jb"
+    }
+  },
+  "api": {
+    "neidersadmin": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 364,
+              "description": "updated_key"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "xycau3nrpfh5rgopmql3bf2bs4",
+        "GraphQLAPIEndpointOutput": "https://xx2uv7qjsvaa5b2kgf5cmpy6dy.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-4tqqqumd6zg5jndvtmnxhvkb4i"
+      },
+      "lastPushTimeStamp": "2021-12-03T06:25:47.690Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-neidersadmin-develop-132208-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apineidersadmin"
+      },
+      "lastPushDirHash": "uZTr+UY8uHFJF2lcZXMWD/K3SDQ="
+    }
+  },
+  "auth": {
+    "neidersadmin4e2a3c54": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "UserPoolId": "us-east-1_e0E4fBiig",
+        "AppClientIDWeb": "40ru2eai45f2aju3q0h6iopkao",
+        "AppClientID": "730urau7qot1pm6paa01p78rdr",
+        "IdentityPoolId": "us-east-1:0feaa578-d8a1-4607-b727-6c1071cc288f",
+        "IdentityPoolName": "neidersadmin4e2a3c54_identitypool_4e2a3c54__develop",
+        "UserPoolName": "neidersadmin4e2a3c54_userpool_4e2a3c54",
+        "HostedUIDomain": "enlightenedgrove-develop",
+        "OAuthMetadata": "{\"AllowedOAuthFlows\":[\"code\"],\"AllowedOAuthScopes\":[\"phone\",\"email\",\"openid\",\"profile\",\"aws.cognito.signin.user.admin\"],\"CallbackURLs\":[\"myapp://\"],\"LogoutURLs\":[\"myapp://\"]}",
+        "CreatedSNSRole": "arn:aws:iam::944458252180:role/sns4e2a3c54132208-develop",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:944458252180:userpool/us-east-1_e0E4fBiig"
+      },
+      "lastPushTimeStamp": "2021-12-03T06:25:47.639Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-neidersadmin-develop-132208-deployment/amplify-cfn-templates/auth/neidersadmin4e2a3c54-cloudformation-template.json",
+        "logicalId": "authneidersadmin4e2a3c54"
+      },
+      "lastPushDirHash": "nTp27TrLtl0bc6wT9RXTjVJCKRM=",
+      "frontendAuthConfig": {
+        "loginMechanisms": [
+          "PREFERRED_USERNAME"
+        ],
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ],
+        "socialProviders": [
+          "FACEBOOK",
+          "GOOGLE"
+        ],
+        "usernameAttributes": []
+      }
+    }
+  },
+  "storage": {
+    "amplifyadminbucket2021": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "BucketName": "amplifyadminbucket2021132208-develop",
+        "Region": "us-east-1"
+      },
+      "lastPushTimeStamp": "2021-12-03T06:25:47.646Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-neidersadmin-develop-132208-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+        "logicalId": "storageamplifyadminbucket2021"
+      }
+    }
+  }
+}

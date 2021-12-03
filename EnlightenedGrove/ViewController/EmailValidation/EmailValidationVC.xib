@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EmailValidationVC" customModule="Neiders" customModuleProvider="target">
+            <connections>
+                <outlet property="lblEnterOtpMsg" destination="Bbz-AU-wzi" id="txl-qC-ItH"/>
+                <outlet property="textOTP1" destination="lTf-8M-YCk" id="70I-hY-nmJ"/>
+                <outlet property="textOTP2" destination="Veh-TN-DGX" id="OlO-yP-82J"/>
+                <outlet property="textOTP3" destination="jb7-ul-oMf" id="aNS-ox-rAz"/>
+                <outlet property="textOTP4" destination="ZAU-CX-PIq" id="O6D-95-ZnT"/>
+                <outlet property="textOTP5" destination="3do-ZD-Kcq" id="9wu-xx-nlI"/>
+                <outlet property="textOTP6" destination="s3r-dC-ovR" id="b68-w8-GKz"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUs-Sz-BeX">
+                    <rect key="frame" x="31" y="280" width="352" height="255.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open Content for Development" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ks-LN-Asd">
+                            <rect key="frame" x="20" y="24" width="312" height="23"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="19"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OqK-CT-6QD">
+                            <rect key="frame" x="8" y="99" width="336" height="55"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rCy-no-N1a">
+                                    <rect key="frame" x="0.0" y="0.0" width="47.5" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lTf-8M-YCk">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="lTf-8M-YCk" secondAttribute="bottom" id="Jx4-EL-VcZ"/>
+                                        <constraint firstItem="lTf-8M-YCk" firstAttribute="top" secondItem="rCy-no-N1a" secondAttribute="top" id="jMa-21-fzJ"/>
+                                        <constraint firstItem="lTf-8M-YCk" firstAttribute="leading" secondItem="rCy-no-N1a" secondAttribute="leading" id="oiU-W8-vAz"/>
+                                        <constraint firstAttribute="trailing" secondItem="lTf-8M-YCk" secondAttribute="trailing" id="sj9-Tj-eKv"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JkE-iR-Wa5">
+                                    <rect key="frame" x="57.5" y="0.0" width="48" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Veh-TN-DGX">
+                                            <rect key="frame" x="0.0" y="0.0" width="48" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstItem="Veh-TN-DGX" firstAttribute="leading" secondItem="JkE-iR-Wa5" secondAttribute="leading" id="FLv-rU-7H4"/>
+                                        <constraint firstAttribute="trailing" secondItem="Veh-TN-DGX" secondAttribute="trailing" id="G68-zN-AbB"/>
+                                        <constraint firstAttribute="bottom" secondItem="Veh-TN-DGX" secondAttribute="bottom" id="Pat-Lo-ew6"/>
+                                        <constraint firstItem="Veh-TN-DGX" firstAttribute="top" secondItem="JkE-iR-Wa5" secondAttribute="top" id="g3Y-Ql-iIh"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yOO-iR-EBI">
+                                    <rect key="frame" x="115.5" y="0.0" width="47.5" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jb7-ul-oMf">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="jb7-ul-oMf" secondAttribute="trailing" id="JL5-l1-nBa"/>
+                                        <constraint firstItem="jb7-ul-oMf" firstAttribute="leading" secondItem="yOO-iR-EBI" secondAttribute="leading" id="MuH-d2-T5y"/>
+                                        <constraint firstAttribute="bottom" secondItem="jb7-ul-oMf" secondAttribute="bottom" id="gfQ-Vd-oVR"/>
+                                        <constraint firstItem="jb7-ul-oMf" firstAttribute="top" secondItem="yOO-iR-EBI" secondAttribute="top" id="hFP-At-VUw"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSL-2L-W9Z">
+                                    <rect key="frame" x="173" y="0.0" width="47.5" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZAU-CX-PIq">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstItem="ZAU-CX-PIq" firstAttribute="top" secondItem="VSL-2L-W9Z" secondAttribute="top" id="DNy-VZ-ycM"/>
+                                        <constraint firstAttribute="bottom" secondItem="ZAU-CX-PIq" secondAttribute="bottom" id="HWl-Vd-Dmo"/>
+                                        <constraint firstAttribute="trailing" secondItem="ZAU-CX-PIq" secondAttribute="trailing" id="mWz-G1-dT1"/>
+                                        <constraint firstItem="ZAU-CX-PIq" firstAttribute="leading" secondItem="VSL-2L-W9Z" secondAttribute="leading" id="yiE-fG-NYA"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBm-Se-HHc">
+                                    <rect key="frame" x="230.5" y="0.0" width="48" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3do-ZD-Kcq">
+                                            <rect key="frame" x="0.0" y="0.0" width="48" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="3do-ZD-Kcq" secondAttribute="trailing" id="EZ4-p5-Pd5"/>
+                                        <constraint firstAttribute="bottom" secondItem="3do-ZD-Kcq" secondAttribute="bottom" id="QeH-L2-RUG"/>
+                                        <constraint firstItem="3do-ZD-Kcq" firstAttribute="leading" secondItem="UBm-Se-HHc" secondAttribute="leading" id="WUK-g1-NhG"/>
+                                        <constraint firstItem="3do-ZD-Kcq" firstAttribute="top" secondItem="UBm-Se-HHc" secondAttribute="top" id="Xds-6X-siU"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="214-pf-EI4">
+                                    <rect key="frame" x="288.5" y="0.0" width="47.5" height="55"/>
+                                    <subviews>
+                                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="s3r-dC-ovR">
+                                            <rect key="frame" x="0.0" y="0.0" width="47.5" height="55"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" name="InputBox"/>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="s3r-dC-ovR" secondAttribute="trailing" id="Fct-EE-Fj7"/>
+                                        <constraint firstItem="s3r-dC-ovR" firstAttribute="top" secondItem="214-pf-EI4" secondAttribute="top" id="Neg-pC-tvc"/>
+                                        <constraint firstAttribute="bottom" secondItem="s3r-dC-ovR" secondAttribute="bottom" id="jy7-zO-7Ds"/>
+                                        <constraint firstItem="s3r-dC-ovR" firstAttribute="leading" secondItem="214-pf-EI4" secondAttribute="leading" id="u7u-Pd-Yvf"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="OqK-CT-6QD" secondAttribute="height" multiplier="67:11" id="wU9-iv-kj7"/>
+                            </constraints>
+                        </stackView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Duv-mz-Yja">
+                            <rect key="frame" x="0.0" y="174" width="352" height="1"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="Fun-9J-WV6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-2F-Fff">
+                            <rect key="frame" x="0.0" y="180" width="352" height="75.5"/>
+                            <state key="normal" title="Submit">
+                                <color key="titleColor" name="CustomYellow"/>
+                            </state>
+                            <connections>
+                                <action selector="btnSubmitOtp:" destination="-1" eventType="touchUpInside" id="dFY-JW-lHp"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter the OTP sent to your email" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bbz-AU-wzi">
+                            <rect key="frame" x="8" y="62" width="336" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9Ks-LN-Asd" firstAttribute="top" secondItem="WUs-Sz-BeX" secondAttribute="top" constant="24" id="6gt-bz-FHX"/>
+                        <constraint firstAttribute="bottom" secondItem="bsf-2F-Fff" secondAttribute="bottom" id="DzX-dy-QvQ"/>
+                        <constraint firstItem="9Ks-LN-Asd" firstAttribute="leading" secondItem="WUs-Sz-BeX" secondAttribute="leading" constant="20" id="HnE-4X-YCr"/>
+                        <constraint firstItem="Duv-mz-Yja" firstAttribute="leading" secondItem="WUs-Sz-BeX" secondAttribute="leading" id="K1h-Ye-Vng"/>
+                        <constraint firstAttribute="trailing" secondItem="9Ks-LN-Asd" secondAttribute="trailing" constant="20" id="KAp-0G-Ha4"/>
+                        <constraint firstItem="Duv-mz-Yja" firstAttribute="top" secondItem="OqK-CT-6QD" secondAttribute="bottom" constant="20" id="NOo-8v-5Hm"/>
+                        <constraint firstAttribute="trailing" secondItem="Bbz-AU-wzi" secondAttribute="trailing" constant="8" id="Sm1-YU-WcV"/>
+                        <constraint firstAttribute="trailing" secondItem="OqK-CT-6QD" secondAttribute="trailing" constant="8" id="TcP-xF-Gos"/>
+                        <constraint firstItem="Bbz-AU-wzi" firstAttribute="leading" secondItem="WUs-Sz-BeX" secondAttribute="leading" constant="8" id="VpE-8O-rrK"/>
+                        <constraint firstAttribute="trailing" secondItem="bsf-2F-Fff" secondAttribute="trailing" id="XlI-Yg-QXR"/>
+                        <constraint firstAttribute="trailing" secondItem="Duv-mz-Yja" secondAttribute="trailing" id="ZNE-gC-voH"/>
+                        <constraint firstItem="OqK-CT-6QD" firstAttribute="leading" secondItem="WUs-Sz-BeX" secondAttribute="leading" constant="8" id="a34-8N-pjg"/>
+                        <constraint firstAttribute="width" secondItem="WUs-Sz-BeX" secondAttribute="height" multiplier="325:236" id="e7U-FU-2Oh"/>
+                        <constraint firstItem="bsf-2F-Fff" firstAttribute="leading" secondItem="WUs-Sz-BeX" secondAttribute="leading" id="fCq-99-CZv"/>
+                        <constraint firstItem="OqK-CT-6QD" firstAttribute="top" secondItem="Bbz-AU-wzi" secondAttribute="bottom" constant="20" id="gCs-CT-XVT"/>
+                        <constraint firstItem="Bbz-AU-wzi" firstAttribute="top" secondItem="9Ks-LN-Asd" secondAttribute="bottom" constant="15" id="jCg-XX-uOj"/>
+                        <constraint firstItem="bsf-2F-Fff" firstAttribute="top" secondItem="Duv-mz-Yja" secondAttribute="bottom" constant="5" id="kHz-Ai-BVO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.42511237157534248" alpha="0.3828392551369863" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WUs-Sz-BeX" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.85" id="2cV-Qf-1eZ"/>
+                <constraint firstItem="WUs-Sz-BeX" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" multiplier="0.9" id="IBm-zq-h9h"/>
+                <constraint firstItem="WUs-Sz-BeX" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="yUN-yc-MNY"/>
+            </constraints>
+            <point key="canvasLocation" x="47.826086956521742" y="32.8125"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="CustomYellow">
+            <color red="0.93000000715255737" green="0.64999997615814209" blue="0.23100000619888306" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="InputBox">
+            <color red="0.9100000262260437" green="0.9100000262260437" blue="0.9100000262260437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

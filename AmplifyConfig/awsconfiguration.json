@@ -1,0 +1,72 @@
+{
+    "UserAgent": "aws-amplify/cli",
+    "Version": "0.1.0",
+    "IdentityManager": {
+        "Default": {}
+    },
+    "AppSync": {
+        "Default": {
+            "ApiUrl": "https://xx2uv7qjsvaa5b2kgf5cmpy6dy.appsync-api.us-east-1.amazonaws.com/graphql",
+            "Region": "us-east-1",
+            "AuthMode": "API_KEY",
+            "ApiKey": "da2-4tqqqumd6zg5jndvtmnxhvkb4i",
+            "ClientDatabasePrefix": "neidersadmin_API_KEY"
+        }
+    },
+    "CredentialsProvider": {
+        "CognitoIdentity": {
+            "Default": {
+                "PoolId": "us-east-1:0feaa578-d8a1-4607-b727-6c1071cc288f",
+                "Region": "us-east-1"
+            }
+        }
+    },
+    "CognitoUserPool": {
+        "Default": {
+            "PoolId": "us-east-1_e0E4fBiig",
+            "AppClientId": "730urau7qot1pm6paa01p78rdr",
+            "Region": "us-east-1"
+        }
+    },
+    "Auth": {
+        "Default": {
+            "OAuth": {
+                "WebDomain": "enlightenedgrove-develop.auth.us-east-1.amazoncognito.com",
+                "AppClientId": "730urau7qot1pm6paa01p78rdr",
+                "SignInRedirectURI": "myapp://",
+                "SignOutRedirectURI": "myapp://",
+                "Scopes": [
+                    "phone",
+                    "email",
+                    "openid",
+                    "profile",
+                    "aws.cognito.signin.user.admin"
+                ]
+            },
+            "authenticationFlowType": "USER_SRP_AUTH",
+            "loginMechanisms": [
+                "PREFERRED_USERNAME"
+            ],
+            "signupAttributes": [
+                "EMAIL"
+            ],
+            "passwordProtectionSettings": {
+                "passwordPolicyMinLength": 8,
+                "passwordPolicyCharacters": []
+            },
+            "mfaConfiguration": "OFF",
+            "mfaTypes": [
+                "SMS"
+            ],
+            "verificationMechanisms": [
+                "EMAIL"
+            ]
+        }
+    },
+    "S3TransferUtility": {
+        "Default": {
+            "Bucket": "amplifyadminbucket2021132208-develop",
+            "Region": "us-east-1"
+        }
+    }
+}
