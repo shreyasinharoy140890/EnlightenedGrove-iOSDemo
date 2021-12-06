@@ -733,17 +733,18 @@ extension HomeVC : CourseSelectDelegate,SKProductsRequestDelegate, SKPaymentTran
 //                   }
 //                   Globals.shared.showWarnigMessage(alert.message)
 //                   }
-                if (SKPaymentQueue.canMakePayments())
-                           {
-                    let productID:NSSet = NSSet(object: self.productid);
-                               let productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as! Set<String>);
-                               productsRequest.delegate = self;
-                               productsRequest.start();
-                               print("Fetching Products");
-                           }else{
-                               print("Can't make purchases");
-                           }
-                
+//                if (SKPaymentQueue.canMakePayments())
+//                           {
+//                    let productID:NSSet = NSSet(object: self.productid);
+//                               let productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as! Set<String>);
+//                               productsRequest.delegate = self;
+//                               productsRequest.start();
+//                               print("Fetching Products");
+//                           }else{
+//                               print("Can't make purchases");
+//                           }
+                let myCartVC = SubsCriptionVC(nibName: "SubsCriptionVC", bundle: nil)
+                UIApplication.getTopMostViewController()?.navigationController?.pushViewController(myCartVC, animated: true)
                 
                 
             }))
