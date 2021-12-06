@@ -10,6 +10,7 @@ import AWSAuthCore
 //import AWSCognitoIdentityProviderASF
 import AWSMobileClient
 
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -67,6 +68,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let credentialProvider = AWSCognitoCredentialsProvider(regionType: .USEast1, identityPoolId: "us-east-1:0feaa578-d8a1-4607-b727-6c1071cc288f")
         let configuration = AWSServiceConfiguration(region: .USEast1, credentialsProvider: credentialProvider)
         AWSServiceManager.default().defaultServiceConfiguration = configuration
+        
+      
         return true
     }
 

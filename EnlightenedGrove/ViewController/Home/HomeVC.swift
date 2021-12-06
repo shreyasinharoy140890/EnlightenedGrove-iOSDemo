@@ -49,7 +49,7 @@ class HomeVC: UIViewController,AlertDisplayer {
     var isSearchClick = true
     var productsArray: Array<SKProduct?> = []
     var productid = ""
-    
+    var productID:String!
     func setupUI(){
         
         viewHeader.addShadow(offset: CGSize.init(width: 0, height: 3), color: UIColor.gray, radius: 3.0, opacity: 0.6)
@@ -111,7 +111,7 @@ class HomeVC: UIViewController,AlertDisplayer {
         tableHome.delegate = self
         tableHome.dataSource = self
         tableHome.register(HomeCourseTableViewCell.self)
-        
+        print(productID)
    }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -720,55 +720,48 @@ extension HomeVC : CourseSelectDelegate,SKProductsRequestDelegate, SKPaymentTran
     func selectCourse(index: Int, section: Int) {
         
         if (viewModelHome?.valueArray[section][index].premium == true){
-            if let _ = UserDefaults.standard.value(forKey: "ID") {
-                self.productid = viewModelHome?.valueArray[section][index].id ?? ""
-            let refreshAlert = UIAlertController(title: "OC4D", message: "Do you want to purchase this course?", preferredStyle: UIAlertController.Style.alert)
+            if UserDefaults.standard.object(forKey: "currentSubscription") != nil
+            {
+                productID = UserDefaults.standard.object(forKey: "currentSubscription") as? String
+                self.productid = productID
+                let coursedetailsVC = CourseDetailsVC(nibName: "CourseDetailsVC", bundle: nil)
+                coursedetailsVC.courseId = viewModelHome?.valueArray[section][index].id ?? ""
+                coursedetailsVC.imageUrl = viewModelHome?.valueArray[section][index].content_url ?? ""
+                coursedetailsVC.courseDetails = "\(viewModelHome?.valueArray[section][index].title ?? "") \n\(viewModelHome?.valueArray[section][index].description ?? "")"
+                coursedetailsVC.organizationName = viewModelHome?.valueArray[section][index].organization_name ?? ""
+                self.navigationController?.pushViewController(coursedetailsVC, animated: true)
+            }
+            else
+            {
+                if let _ = UserDefaults.standard.value(forKey: "ID") {
+                    self.productid = viewModelHome?.valueArray[section][index].id ?? ""
+                let refreshAlert = UIAlertController(title: "OC4D", message: "Do you want to purchase this course?", preferredStyle: UIAlertController.Style.alert)
 
-            refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { (action: UIAlertAction!) in
-                 // print("Handle Ok logic here")
-//                let price = 0.6
-//                PKIAPHandler.shared.purchase(product: price)) { (alert, product, transaction) in
-//                   if let tran = transaction, let prod = product {
-//                     //use transaction details and purchased product as you want
-//                   }
-//                   Globals.shared.showWarnigMessage(alert.message)
-//                   }
-//                if (SKPaymentQueue.canMakePayments())
-//                           {
-//                    let productID:NSSet = NSSet(object: self.productid);
-//                               let productsRequest:SKProductsRequest = SKProductsRequest(productIdentifiers: productID as! Set<String>);
-//                               productsRequest.delegate = self;
-//                               productsRequest.start();
-//                               print("Fetching Products");
-//                           }else{
-//                               print("Can't make purchases");
-//                           }
-                let myCartVC = SubsCriptionVC(nibName: "SubsCriptionVC", bundle: nil)
-                UIApplication.getTopMostViewController()?.navigationController?.pushViewController(myCartVC, animated: true)
-                
-                
-            }))
-
-            refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
-                  print("Handle Cancel Logic here")
-            }))
-
-            present(refreshAlert, animated: true, completion: nil)
-            }else {
-                let alertOkAction = UIAlertAction(title: "OK", style: .default) { (_) in
+                    refreshAlert.addAction(UIAlertAction(title: "YES", style: .default, handler: { [self] (action: UIAlertAction!) in
+                        
+                        let subscriptionVC = SubsCriptionVC(nibName: "SubsCriptionVC", bundle: nil)
+                        UIApplication.getTopMostViewController()?.navigationController?.pushViewController(subscriptionVC, animated: true)
+                   
+                 
                     
-                    let loginVc = LogInVC(nibName: "LogInVC", bundle: nil)
-                    self.navigationController?.pushViewController(loginVc, animated: true)
-                }
-                self.showAlertWith(message: "You need to login to purchase".localized(), type: .custom(actions: [alertOkAction]))
-           }
-        }else {
-        let coursedetailsVC = CourseDetailsVC(nibName: "CourseDetailsVC", bundle: nil)
-        coursedetailsVC.courseId = viewModelHome?.valueArray[section][index].id ?? ""
-        coursedetailsVC.imageUrl = viewModelHome?.valueArray[section][index].content_url ?? ""
-        coursedetailsVC.courseDetails = "\(viewModelHome?.valueArray[section][index].title ?? "") \n\(viewModelHome?.valueArray[section][index].description ?? "")"
-        coursedetailsVC.organizationName = viewModelHome?.valueArray[section][index].organization_name ?? ""
-        self.navigationController?.pushViewController(coursedetailsVC, animated: true)
+                }))
+
+                refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
+                      print("Handle Cancel Logic here")
+                }))
+
+                present(refreshAlert, animated: true, completion: nil)
+                }else {
+                    let alertOkAction = UIAlertAction(title: "OK", style: .default) { (_) in
+                        
+                        let loginVc = LogInVC(nibName: "LogInVC", bundle: nil)
+                        self.navigationController?.pushViewController(loginVc, animated: true)
+                    }
+                    self.showAlertWith(message: "You need to login to purchase".localized(), type: .custom(actions: [alertOkAction]))
+               }
+                
+            }
+
         }
     }
     

@@ -6,8 +6,8 @@
       "internalID" : "7F37C8B6",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "One Month Subscription",
+          "displayName" : "Monthly Subscription",
           "locale" : "en_US"
         }
       ],
@@ -21,8 +21,8 @@
       "internalID" : "FAB27905",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "Subscription for four months",
+          "displayName" : "Quarterly Subscription",
           "locale" : "en_US"
         }
       ],
@@ -36,8 +36,8 @@
       "internalID" : "6FD1B94C",
       "localizations" : [
         {
-          "description" : "",
-          "displayName" : "",
+          "description" : "Subscription for one year",
+          "displayName" : "Yearly Subscription",
           "locale" : "en_US"
         }
       ],
