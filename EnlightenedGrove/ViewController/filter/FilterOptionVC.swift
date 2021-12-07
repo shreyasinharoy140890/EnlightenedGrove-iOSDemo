@@ -64,6 +64,7 @@ class FilterOptionVC: UIViewController,AlertDisplayer {
         btnApply.setTitle("APPLY".localized(), for: .normal)
         btnClearFilter.setTitle("Clear Filter".localized(), for: .normal)
         // Do any additional setup after loading the view.
+       
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)

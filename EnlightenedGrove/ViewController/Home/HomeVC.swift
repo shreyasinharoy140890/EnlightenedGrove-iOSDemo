@@ -741,9 +741,7 @@ extension HomeVC : CourseSelectDelegate,SKProductsRequestDelegate, SKPaymentTran
                         
                         let subscriptionVC = SubsCriptionVC(nibName: "SubsCriptionVC", bundle: nil)
                         UIApplication.getTopMostViewController()?.navigationController?.pushViewController(subscriptionVC, animated: true)
-                   
-                 
-                    
+ 
                 }))
 
                 refreshAlert.addAction(UIAlertAction(title: "CANCEL", style: .cancel, handler: { (action: UIAlertAction!) in
@@ -763,6 +761,12 @@ extension HomeVC : CourseSelectDelegate,SKProductsRequestDelegate, SKPaymentTran
             }
 
         }
+        let coursedetailsVC = CourseDetailsVC(nibName: "CourseDetailsVC", bundle: nil)
+        coursedetailsVC.courseId = viewModelHome?.valueArray[section][index].id ?? ""
+        coursedetailsVC.imageUrl = viewModelHome?.valueArray[section][index].content_url ?? ""
+        coursedetailsVC.courseDetails = "\(viewModelHome?.valueArray[section][index].title ?? "") \n\(viewModelHome?.valueArray[section][index].description ?? "")"
+        coursedetailsVC.organizationName = viewModelHome?.valueArray[section][index].organization_name ?? ""
+        self.navigationController?.pushViewController(coursedetailsVC, animated: true)
     }
     
     
