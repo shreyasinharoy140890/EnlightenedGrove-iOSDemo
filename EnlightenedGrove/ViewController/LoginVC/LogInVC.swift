@@ -462,7 +462,7 @@ extension LogInVC{
         graphRequest.start { _, result, error in
             if error == nil {
                 let data: [String: AnyObject] = result as! [String: AnyObject]
-                
+                print(data)
                 // Facebook Id
                 if let facebookId = data["id"] as? String {
                     print("Facebook Id: \(facebookId)")

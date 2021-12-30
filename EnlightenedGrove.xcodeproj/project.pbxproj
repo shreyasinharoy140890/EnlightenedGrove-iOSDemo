@@ -63,8 +63,6 @@
 		444ED5F4273E5C3600D29B8D /* ViewModelConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED5D8273E5C3600D29B8D /* ViewModelConfigurable.swift */; };
 		444ED5F5273E5C3600D29B8D /* SidePanelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED5DA273E5C3600D29B8D /* SidePanelModel.swift */; };
 		444ED5F6273E5C3600D29B8D /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED5DB273E5C3600D29B8D /* FilterModel.swift */; };
-		444ED687273E6DB400D29B8D /* IAPHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED685273E6DB300D29B8D /* IAPHelper.swift */; };
-		444ED688273E6DB400D29B8D /* IAPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED686273E6DB300D29B8D /* IAPManager.swift */; };
 		444ED7BE273E7DDC00D29B8D /* HomeVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444ED773273E7DDB00D29B8D /* HomeVC.xib */; };
 		444ED7BF273E7DDC00D29B8D /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 444ED774273E7DDB00D29B8D /* HomeVC.swift */; };
 		444ED7C0273E7DDC00D29B8D /* AdditionalCourseCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444ED776273E7DDB00D29B8D /* AdditionalCourseCollectionCell.xib */; };
@@ -126,6 +124,7 @@
 		444ED802273E806B00D29B8D /* SubsCriptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 444ED800273E806B00D29B8D /* SubsCriptionVC.xib */; };
 		54DF2FC32F15E05C660D2346 /* Pods_EnlightenedGrove.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11F5488221EA3A98EDA09451 /* Pods_EnlightenedGrove.framework */; };
 		B9AFCC35281A0A02C5157C9E /* Pods_EnlightenedGrove_EnlightenedGroveUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8C415C9C4F0271C3FF3A7C2 /* Pods_EnlightenedGrove_EnlightenedGroveUITests.framework */; };
+		CD3BDBEC277CC394003DB5C9 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3BDBEB277CC394003DB5C9 /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -217,8 +216,6 @@
 		444ED5D8273E5C3600D29B8D /* ViewModelConfigurable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelConfigurable.swift; sourceTree = "<group>"; };
 		444ED5DA273E5C3600D29B8D /* SidePanelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidePanelModel.swift; sourceTree = "<group>"; };
 		444ED5DB273E5C3600D29B8D /* FilterModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
-		444ED685273E6DB300D29B8D /* IAPHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPHelper.swift; sourceTree = "<group>"; };
-		444ED686273E6DB300D29B8D /* IAPManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IAPManager.swift; sourceTree = "<group>"; };
 		444ED773273E7DDB00D29B8D /* HomeVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeVC.xib; sourceTree = "<group>"; };
 		444ED774273E7DDB00D29B8D /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		444ED776273E7DDB00D29B8D /* AdditionalCourseCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdditionalCourseCollectionCell.xib; sourceTree = "<group>"; };
@@ -285,6 +282,7 @@
 		B09DB3A3E51A512AB1F34940 /* Pods-EnlightenedGrove-EnlightenedGroveUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnlightenedGrove-EnlightenedGroveUITests.debug.xcconfig"; path = "Target Support Files/Pods-EnlightenedGrove-EnlightenedGroveUITests/Pods-EnlightenedGrove-EnlightenedGroveUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B8C415C9C4F0271C3FF3A7C2 /* Pods_EnlightenedGrove_EnlightenedGroveUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EnlightenedGrove_EnlightenedGroveUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C202D50C06A815F07DF143AF /* Pods-EnlightenedGrove.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnlightenedGrove.release.xcconfig"; path = "Target Support Files/Pods-EnlightenedGrove/Pods-EnlightenedGrove.release.xcconfig"; sourceTree = "<group>"; };
+		CD3BDBEB277CC394003DB5C9 /* Config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -319,6 +317,7 @@
 		444ED4A6273E47F800D29B8D = {
 			isa = PBXGroup;
 			children = (
+				CD3BDBEB277CC394003DB5C9 /* Config.plist */,
 				44EC624B274F7AF6001BF65A /* Configuration.storekit */,
 				444ED574273E569900D29B8D /* EnlightenedGrove-Bridging-Header.h */,
 				444ED50A273E498700D29B8D /* AmplifyModels */,
@@ -346,8 +345,6 @@
 			isa = PBXGroup;
 			children = (
 				444ED771273E7DDB00D29B8D /* ViewController */,
-				444ED685273E6DB300D29B8D /* IAPHelper.swift */,
-				444ED686273E6DB300D29B8D /* IAPManager.swift */,
 				444ED5CA273E5C3600D29B8D /* Helper */,
 				444ED5D9273E5C3600D29B8D /* Model */,
 				444ED5BD273E5C3500D29B8D /* ViewModel */,
@@ -839,6 +836,7 @@
 				444ED7F8273E7DDC00D29B8D /* LanguageVC.xib in Resources */,
 				444ED7CF273E7DDC00D29B8D /* EditPasswordVC.xib in Resources */,
 				444ED7E9273E7DDC00D29B8D /* UsertypeViewController.xib in Resources */,
+				CD3BDBEC277CC394003DB5C9 /* Config.plist in Resources */,
 				444ED7F3273E7DDC00D29B8D /* FilterOptionVC.xib in Resources */,
 				444ED58F273E58DC00D29B8D /* awsconfiguration.json in Resources */,
 				444ED802273E806B00D29B8D /* SubsCriptionVC.xib in Resources */,
@@ -1022,7 +1020,6 @@
 				444ED801273E806B00D29B8D /* SubsCriptionVC.swift in Sources */,
 				444ED7C9273E7DDC00D29B8D /* headerCollectionView.swift in Sources */,
 				444ED5EC273E5C3600D29B8D /* RNCryptor.swift in Sources */,
-				444ED688273E6DB400D29B8D /* IAPManager.swift in Sources */,
 				444ED51D273E49C600D29B8D /* Company.swift in Sources */,
 				444ED522273E49C600D29B8D /* Filters.swift in Sources */,
 				444ED4B5273E47F800D29B8D /* SceneDelegate.swift in Sources */,
@@ -1052,7 +1049,6 @@
 				444ED5ED273E5C3600D29B8D /* Routing.swift in Sources */,
 				444ED7E8273E7DDC00D29B8D /* UsertypeViewController.swift in Sources */,
 				444ED7C7273E7DDC00D29B8D /* HeaderCollectionReusableView.swift in Sources */,
-				444ED687273E6DB400D29B8D /* IAPHelper.swift in Sources */,
 				444ED5E4273E5C3600D29B8D /* SidePanelViewModel.swift in Sources */,
 				444ED7E0273E7DDC00D29B8D /* SidePanelTableViewCell.swift in Sources */,
 				444ED5F3273E5C3600D29B8D /* ModelConfigurable.swift in Sources */,
@@ -1250,7 +1246,7 @@
 				CODE_SIGN_ENTITLEMENTS = EnlightenedGrove/EnlightenedGrove.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = S7J8S78RGZ;
 				INFOPLIST_FILE = EnlightenedGrove/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1278,7 +1274,7 @@
 				CODE_SIGN_ENTITLEMENTS = EnlightenedGrove/EnlightenedGrove.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.4;
+				CURRENT_PROJECT_VERSION = 1.6;
 				DEVELOPMENT_TEAM = S7J8S78RGZ;
 				INFOPLIST_FILE = EnlightenedGrove/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;

@@ -39,7 +39,7 @@ extension Environment {
 // MARK: - App Constants
 
 struct AppConstant {
-    static let appTitle = "Open Content for Development"
+    static let appTitle = "Enlightened Grove"
         //Bundle.main.object(forInfoDictionaryKey:"CFBundleName") as! String
     
     static let appDel = UIApplication.shared.delegate as! AppDelegate
