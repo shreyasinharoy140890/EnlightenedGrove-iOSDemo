@@ -92,9 +92,7 @@ extension UsertypeViewController{
                         hideActivityIndicator(viewController: self)
                         self.delegate?.userTypeConfirm()
                         self.dismiss(animated: true, completion: nil)
-//                        let homeVC = UsertypeViewController(nibName: "UsertypeViewController", bundle: nil)
-//                        self.navigationController?.pushViewController(homeVC, animated: true)
-                    }
+         }
                 }
             case .failure(let error):
                 DispatchQueue.main.async {
